@@ -1,0 +1,170 @@
+#map {
+    height: 400px;
+    width: 100%;
+   }
+
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    position: Center;
+    
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    margin-left: flex;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+    
+    /* margin-right: 600px; */
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    /* padding: 20px; */
+    /* display: flex; */
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/*//////////////////////////////////////////*/
+/* THIS IS THE CODE FOR THE SLIDING IMAGES */
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #838080a1;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  /* .container {
+    position: relative;
+  } */
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    /* position: relative; */
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 25px;
+    margin-top: -300px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 9px 9px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover{
+    background-color: rgba(19, 118, 217, 0.8);
+  }
+  .next:hover {
+    background-color: rgba(19, 118, 217, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* END OF THE CODE FOR THE SLIDING IMAGES */
