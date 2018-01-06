@@ -1,17 +1,3 @@
-<?php 
-
-// Require https
-if ($_SERVER['HTTPS'] != "on") {
-    $url = "https://". $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-    header("Location: $url");
-    exit;
-}
-
-?>
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -21,22 +7,14 @@ if ($_SERVER['HTTPS'] != "on") {
 <meta name="viewport" content="width=device-width initial-scale=1.0">
 <link rel="stylesheet" href="includes/css/mobile.css">
 <link rel="stylesheet" href="includes/css/desktop.css">
-<!-- this is breaking the responsive -->
 <link rel="stylesheet" href="includes/css/slidingimg.css">
-
-<!-- <link rel="stylesheet" href="includes/css/main.css"> -->
 <link rel="stylesheet" href="includes/css/nav.css">
-<!-- this is breaking the responsive -->
-<!-- <link rel="stylesheet" href="includes/css/imagetext.css"> -->
-<!--[if IE]><link rel="shortcut icon" href="includes/images/favicon.ico"><![endif]-->
-<link rel="icon" href="includes/images/favi.png">
-<!--Start Cookie Script--> <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/5a1a1bdd14a6881e8702b226f7c869f2.js"></script> <!--End Cookie Script-->
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<!-- this is breaking the slider -->
 <link rel="stylesheet" href="includes/css/index.css" >
 <title>Welcome to Event Master!</title>
 </head>
 <body>
+
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
@@ -54,14 +32,8 @@ if ($_SERVER['HTTPS'] != "on") {
   </div>
 </section>
 <!-- THIS IS CODE FOR THE PHOTO SLIDER -->
-<style>
-body {
-    font-family: Arial;
-    margin: 0;
-    background-color: #838080a1;
-  }
-  </style>
-<div class="w3-content" style="max-width:100%">
+
+<div class="w3-content">
   <img class="mySlides" src="includes/images/4.jpg" style="width:100%">
   <img class="mySlides" src="includes/images/2.jpg" style="width:100%">
   <img class="mySlides" src="includes/images/3.jpg" style="width:100%">
@@ -81,73 +53,24 @@ body {
   </div>
 </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
-</script>
 
 <!-- END OF THE CODE FOR THE PHOTO SLIDER -->
 
 <!-- Beinnignof soemthing -->
-<div class="jumbotron">
-    <h2>PRVATE AIR CHARTER</h2>
-    <p class="lead">Private Jet is the leading jet leasing company and the way to make your travel easy and fast.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
-
-
-
-
-
-<div class="social">
-
-<!-- THIS IS FOR TWITTER INTEGRATION -->
-<blockquote class="twitter-tweet"><p lang="en" 
-dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
- <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> 
- <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> 
- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="main">
+    <h2>WHO ARE WE?</h2>
+    <p class="lead">Great Events is the number one platform in the in market for making the concert you always desire,
+     you need to register with us before making any booking but dont worry we will not keep sending you those annoying emails! </p>
 
 </div>
 
-<div class="social">
-<!-- THIS IS FOR TWITTER INTEGRATION -->
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/XGSy3_Czz8k">
-</iframe>
-<!-- FACEBOOK INTEGRATION -->
-</div>
-
+<!--Start Cookie Script--> 
+<script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/5a1a1bdd14a6881e8702b226f7c869f2.js"></script> 
+<!--End Cookie Script-->
 <script src="includes/js/jquery-3.2.1.js"></script>
 <script src="includes/js/main.js"></script>
 <script src="includes/js/slidingphoto.js"></script>
 <script src="includes/js/nav.js"></script>
-
-
 </body>
 </html>
 

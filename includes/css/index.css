@@ -1,4 +1,4 @@
-.social{
+.main{
     float:left;
-    
+    display: flex;
 }
