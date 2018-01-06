@@ -1,3 +1,11 @@
+<link rel="stylesheet" href="includes/css/table.css">
+
+
+
+
+
+
+
 <?php 
 
 include('includes/db.php');
